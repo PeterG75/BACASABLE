@@ -8,11 +8,11 @@ int main()
 	std::system("pause");
 
 	std::printf("[+] clearing display monitors information from registry...\n");
-	system("reg delete HKLM\\SYSTEM\\ControlSet001\\Enum\\Display /f");
-	system("reg delete HKLM\\SYSTEM\\CurrentControlSet\\Enum\\Display /f");
+	std::system("reg delete HKLM\\SYSTEM\\ControlSet001\\Enum\\Display /f");
+	std::system("reg delete HKLM\\SYSTEM\\CurrentControlSet\\Enum\\Display /f");
 
 	std::printf("\n[+] spoofing disk identifiers...\n\n");
-	system("kdmapper.exe spoofer.sys");
+	std::system("kdmapper.exe spoofer.sys");
 
 	std::printf("\n[+] done...\n");
 	std::system("pause > nul");
